@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Open+Sans:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@100&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Controls the scrollbar */
+body::-webkit-scrollbar {
+    width: 0.1px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+html {
+    overflow-y: scroll;
+    scrollbar-color: #808080;
+    scrollbar-width: 800px;
+}
+
+
+
+/********************** Banner ****************************/
+
+.header_img img{
+    top: 0px;
+    max-width: 100%;
+}
+
+
+
+/********************** Nav ******************************/
+
+
+header {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+}
+header:hover {
+    background-color: #446084;
+    width: 100%;
+    height: auto;
+}
+
+li {
+    display: inline;
+}
+
+/*----------------------- nav1 ----------------------------*/
+.nav1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px auto;
+    padding: 0 50px;
+}
+
+.nav1 li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+#panda {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cart-search {
+    padding: 0 29px;
+}
+
+
+
+/* ------------------- nav2 -------------------------------*/
+.nav2 #main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px auto;
+    padding: 0 50px;
+}
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#main-menu ul.sub-menu {
+    position: fixed ;
+    background-color: #446084;
+    padding: 0px 0;
+    list-style: none;
+    display: none;
+    border-radius: 6px;
+    opacity: 0.85;
+}
+#main-menu li:hover > ul.sub-menu {
+    display: block;
+}
+#main-menu ul.sub-menu a {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: border 0.2s linear;
+}
+#main-menu ul.sub-menu a:hover {
+    border: 2px solid #d5dbe3;
+    background-color: #3f5a7e;
+    border-radius: 6px;
+}
+#main-menu ul.sub-menu li:last-child a {
+    /* border: none; */
+}
+
+
+
+
+
+
+/* *+*+*+*+*+*+*+*+*+*++*+  Main  *+*+*+*+*+*++*+*+*+*+*+*+* */
+
+/* ********************* Option filter ********************* */
+.filter_option {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px 10px 60px;
+}
+.filter_option_input {
+    display: flex;
+    align-items: center;
+}
+.filter_option_input input {
+    margin-left: 20px;
+    margin-right: 3px;
+}
+
+/* *********************** Main up ************************ */
+.main-up {
+    display: flex;
+    margin: 30px 60px;
+    max-width: 100%;
+}
+
+
+
+
+/* ********************** Menu_nav ************************* */
+.menu-nav {
+    max-width: 20%;
+    margin-right: 50px;
+}
+.menu-nav h3 {
+    font-size: 17px;
+}
+.menu-nav li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.menu-nav li a {
+    text-decoration: none;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #757575;
+}
+
+
+
+
+
+/* ******************** Products ********************** */
+.product {
+    width: 82%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #446084;
+    margin: 0 auto;
+}
+.as_total {
+    width: 100%;
+    color: aliceblue;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+.headline {
+    text-align: center;
+    margin: 40px 0;
+}
+.as_total h3 {
+    font-size: 30px;
+    color: #111;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    /* border: 1px solid #bebebe; */
+    display: inline-block;
+    color: #555;
+    font-weight: 600px;
+}
+.as_total h4 {
+    font-size: 14px;
+    margin-bottom: -15px;
+}
+
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+    width: 100%;
+    padding: 0 20px;
+}
+ul.products li {
+    flex-basis: 25%;
+    padding: 0 16px;
+    
+    box-sizing: border-box;  /* Nó sẽ tính giá trị width từ boder trở vào trong hình --> k > 100% --> k tràn --> còn 4 sp trên 1 hàng*/
+    margin-bottom: 30px;
+}
+ul.products li img {
+    width: 60%;
+    height: 200px;
+    padding: 15px 0;
+}
+ul.products li .product-top {
+    position: relative; /* Tương đối về vị trí tương đối (k chính xác như ban đầu) */
+    overflow: hidden; /* buy-now không nằm trong hình nên sẽ bị ẩn do hidden */
+    background-color: #ffffff;
+    box-shadow: 5px 5px 2px rgb(224, 223, 223);
+}
+ul.products li .product-top .product-thumb {
+    display: block; /* Để product-thumb hiển thị sự bao phủ của nó lên hình*/
+}
+ul.products li:hover .product-top .product-thumb img {
+    filter: opacity(80%); /* Thêm filter blur 80% vào ảnh khi hover */
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+ul.products li .product-top .product-thumb img {
+    display: block; /* Để ô mua ngay vs img dính liền vs nhau lun (bỏ khoảng cách giữa chữ và hình) */
+    margin: 0 auto;
+}
+ul.products li .product-top a.buy-now {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0;
+    bottom: -37px; /* Khi chưa hover: nằm ẩn tuốt dưới */
+
+    /* Ẩn buy-now */
+    position: absolute; /* Khi để vào thì buy-now sẽ bị co lại + để hoạt động thì cần phụ thuộc vào cha của nó*/
+    width: 100%; /* Để nó bằng đc khối cha của nó */
+
+    transition: 0.25s ease-in-out; /* Hiệu ứng chuyển động */
+    opacity: 0.85; /* Làm trong suốt background (đây là thuộc tính gián tiếp, chứ công năng thật của nó k phải là blur */
+}
+ul.products li:hover a.buy-now {  /* Phải để li tác động vào buy-now thì nó vs hiện lên đc */
+    bottom: 0px; /* hover thì hiện lên */
+}
+ul.products li .product-info {
+    padding: 10px 0;
+}
+ul.products li .product-info a {
+    display: block; /* Để div price k nằm cùng hàng vs tên sp */
+    text-decoration: none;
+}
+ul.products li .product-info a.product-cat {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0px;
+
+}
+ul.products li .product-info a.product-name {
+    color: #334862;
+    padding: 3px 0;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 4px 0;
+}
+ul.products li .product-info .product-price {
+    color: rgb(208, 6, 6);
+    padding: 10px 0;
+    font-weight: 600;
+    /* text-decoration: line-through; */
+}
+/* .as_total #next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.as_total #next li a {
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin: 7px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+.as_total #next li:hover {
+    color: #446084;
+    cursor: pointer;
+    border: #486b99 1px solid;
+} */
+
+
+
+
+
+/* ******************* Cart *****************************/
+.cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.cart h2 {
+    margin-bottom: 20px;
+}
+.cart table {
+    width: 100%;
+}
+.cart table thead tr th:first-child {
+    text-align: left;
+}
+.cart table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+/* __________________________________ */
+.cart table thead tr th:last-child {
+    text-align: right;
+}
+.cart table tbody tr td:last-child {
+    text-align: right;
+}
+
+/* ---------------- Cho cart qua bên phải nằm ------------------- */
+.cart {
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    right: 0;
+    top: 0;
+    background-color: #ccae88;
+    padding: 12px 20px;
+    overflow-y: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+    margin-right: -15px;
+}
+.cart button {
+    margin-top: 12px;
+    height: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    /* transition: all 0.3s ease; */
+    background-color: tomato;
+    color: #fefefe;
+}
+
+.cart i {
+    cursor: pointer;
+
+}
+.cart-icon i {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* ************************* Footer **************************** */
+footer {
+    margin-top: 120px;
+    padding: 0;
+    /* border: 3px solid pink; */
+    font-family: 'Roboto', sans-serif;
+}
+.ft {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: #e4e4e4;
+}
+
+/* Left */
+.left {
+    width: 48%;
+    height: auto;
+    /* border: 3px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img {
+    width: 60%;
+    margin-top: -40px;
+    padding: 0;
+}
+.information {
+    margin-top: -90px;
+}
+.information p {
+    margin: 15px;
+}
+
+.follow {
+    font-size: 25px;
+}
+.follow i {
+    /* border: 2.5px solid green; */
+    /* border-radius: 100px; */
+    padding: 5px;
+}
+.brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Right */
+.right {
+    width: 48%;
+    /* border: 3px solid darkgoldenrod; */
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 60px;
+}
+.right p {
+    margin: 15px 0;
+}
+
+/* License */
+.license {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+    padding: 15px 0 25px 0;
+}
+
+
+
+/* Footer 1 */
+.footer1 {
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: azure;
+}
+
+.footer1 .form {
+    width: 600px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1 .form input {
+    width: 75%;
+    height: 100%;
+    /* margin-left: -55px; */
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+}
+
+.footer1 .form input::placeholder {
+    color: grey;
+    font-size: 16px;
+}
+
+.footer1 .form input:active {
+    border: none;
+}
+
+.footer1 .form .signout {
+    width: 25%;
+    height: 105.5%;
+    background-color: #446084;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0;
+}
+
+.footer1 .form .signout a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #ffff;
+    font-weight: 650;
+}
+
+.footer1 .form .signout a:hover {
+    color: grey;
+}
+
+.fa-location-dot:hover {
+    cursor: pointer;
+}
+.fa-location-dot a {
+    color: #111111;
+}
+
+
+
+
+
+
+
+
+/* ******************* Responsive *********************** */
+
+#toggle {
+    display: none;
+    /* background: #446084; */
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle {
+        display: block;
+        opacity: 1;
+    }
+    body {
+        /* width: 50%; */
+    }
+    .nav1,
+    .nav2 {
+        display: none;
+    }
+    .nav1 ul {
+        flex-direction: row;
+        margin: 0px -20px;
+    }
+    .nav1 ul li a {
+        font-size: 13px;
+        justify-content: space-evenly;
+    }
+    #panda {
+        font-size: 45px;
+    }
+
+    .filter_option h2 {
+        font-size: 20px;
+    }
+    .filter_option_input {
+        font-size: 12px;
+        padding: 0 0px;
+    }
+    .filter_option_input p {
+        margin: 0 -5px;
+    }
+    .menu-nav li a {
+        font-size: 12px;
+    }
+    .product {
+        width: 85%;
+    }
+    ul.products li {
+        flex-basis: 49%;
+    }
+    ul.products li img {
+        height: 200px;
+    }
+
+
+
+    .ft {
+        width: 100%;
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .footer1 {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+}
