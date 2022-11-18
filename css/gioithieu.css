@@ -173,8 +173,8 @@ li {
     padding: 80px;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     font-family: 'DM Sans', sans-serif;
+    /* align-items: center; */
     margin-top: 20px;
 }
 
